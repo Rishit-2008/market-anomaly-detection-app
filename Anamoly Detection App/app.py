@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-api_key = "AIzaSyDsPRBlDBTwgWJERKDdj87iOps8T_9lx8w"
+api_key = "gemini_api_key"
 genai.configure(api_key=api_key)
 
 DEFAULT_FILE_PATH = "sample_financial_market_data.csv"
