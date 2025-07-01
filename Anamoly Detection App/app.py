@@ -82,7 +82,7 @@ def query_gemini(prompt):
             f"Do not be generic, provide specific and detailed responses according to the market situation."
         )
         full_prompt = f"{context}\n\n{prompt}"
-        model = genai.GenerativeModel(model_name='models/gemini-1.5-pro')
+        model = genai.GenerativeModel(model_name='models/gemini-1.5-flash')
         response = model.generate_content(full_prompt)
         return response.text
     except Exception as e:
